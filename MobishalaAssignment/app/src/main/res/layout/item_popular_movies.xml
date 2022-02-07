@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_5sdp"
+            android:elevation="3dp"
+            app:cardCornerRadius="0dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/popularMoviePosterImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_160sdp"
+                    android:adjustViewBounds="true"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:clickable="true"
+                    android:scaleType="centerInside" />
+
+                <TextView
+                    android:id="@+id/popularMovieName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/popularMoviePosterImage"
+                    android:gravity="center"
+                    android:text="MovieName"
+                    android:fontFamily="@font/lato_bold"
+                    android:textColor="@color/labels"
+                    android:textSize="12sp"
+                    />
+                <TextView
+                    android:id="@+id/popularMovieRating"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/popularMovieName"
+                    android:gravity="center"
+                    android:text="Rating"
+                    android:fontFamily="@font/lato_bold"
+                    android:textColor="@color/labels"
+                    android:textSize="12sp"
+                    />
+                <TextView
+                    android:id="@+id/popularMovieReleaseYear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/popularMovieRating"
+                    android:gravity="center"
+                    android:text="Year of release"
+                    android:fontFamily="@font/lato_bold"
+                    android:textColor="@color/labels"
+                    android:textSize="12sp"
+                    />
+                <TextView
+                    android:id="@+id/popularMovieLanguage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/popularMovieReleaseYear"
+                    android:gravity="center"
+                    android:text="Language"
+                    android:fontFamily="@font/lato_bold"
+                    android:textColor="@color/labels"
+                    android:textSize="12sp"
+                    />
+
+
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</layout>

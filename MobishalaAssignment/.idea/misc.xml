@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/sanjay.kumar3/AndroidStudioProjects/MobishalaAssignment/app/src/main/res/drawable-v24/drawable_gradient_color_blue.xml" value="0.19074074074074074" />
+        <entry key="..\:/Users/sanjay.kumar3/AndroidStudioProjects/MobishalaAssignment/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.7041666666666667" />
+        <entry key="..\:/Users/sanjay.kumar3/AndroidStudioProjects/MobishalaAssignment/app/src/main/res/drawable/ic_arrow_back_white_24dp.xml" value="0.16197916666666667" />
+        <entry key="..\:/Users/sanjay.kumar3/AndroidStudioProjects/MobishalaAssignment/app/src/main/res/drawable/ic_calender.xml" value="0.16197916666666667" />
+        <entry key="..\:/Users/sanjay.kumar3/AndroidStudioProjects/MobishalaAssignment/app/src/main/res/layout/activity_base.xml" value="0.22" />
+        <entry key="..\:/Users/sanjay.kumar3/AndroidStudioProjects/MobishalaAssignment/app/src/main/res/layout/activity_main.xml" value="0.18" />
+        <entry key="..\:/Users/sanjay.kumar3/AndroidStudioProjects/MobishalaAssignment/app/src/main/res/layout/activity_movie_details.xml" value="0.5381944444444444" />
+        <entry key="..\:/Users/sanjay.kumar3/AndroidStudioProjects/MobishalaAssignment/app/src/main/res/layout/custom_main_layout.xml" value="0.33" />
+        <entry key="..\:/Users/sanjay.kumar3/AndroidStudioProjects/MobishalaAssignment/app/src/main/res/layout/item_cast.xml" value="0.6395833333333333" />
+        <entry key="..\:/Users/sanjay.kumar3/AndroidStudioProjects/MobishalaAssignment/app/src/main/res/layout/item_playing_movie.xml" value="0.22" />
+        <entry key="..\:/Users/sanjay.kumar3/AndroidStudioProjects/MobishalaAssignment/app/src/main/res/layout/item_popular_movies.xml" value="0.29636711281070743" />
+        <entry key="..\:/Users/sanjay.kumar3/AndroidStudioProjects/MobishalaAssignment/app/src/main/res/layout/item_production_company.xml" value="0.75" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

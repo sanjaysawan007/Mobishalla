@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout
+
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_height="wrap_content"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="@dimen/_110sdp"
+            android:layout_height="wrap_content"
+            android:id="@+id/cardCast"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_5sdp"
+            android:elevation="3dp"
+            app:cardCornerRadius="0dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:id="@+id/relCast"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/castImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:clickable="true"
+                    android:src="@drawable/ic_launcher_background"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    />
+
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+        <TextView
+            android:id="@+id/castName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Sanjay Kumar"
+            android:fontFamily="@font/lato_bold"
+            android:textColor="@color/labels"
+            android:textSize="10sp"
+            />
+
+
+
+
+    </LinearLayout>
+
+</layout>

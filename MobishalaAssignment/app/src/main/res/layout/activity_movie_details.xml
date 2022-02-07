@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <ScrollView
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imagePoster"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:scaleType="centerCrop"
+                android:src="@color/darkBlue"
+                app:layout_constraintDimensionRatio="3:4"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/buttonBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_16sdp"
+                android:background="?selectableItemBackground"
+                android:src="@drawable/ic_arrow_back_white_24dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+
+            <TextView
+                android:id="@+id/textTitle"
+                style="@style/TitleText.Large"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:padding="@dimen/_16sdp"
+                app:layout_constraintTop_toBottomOf="@+id/imagePoster"
+                tools:text="Star Wars: IV" />
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                style="@style/RatingBar"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_16sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textTitle" />
+
+            <TextView
+                android:id="@+id/textVoteCount"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@+id/ratingBar"
+                app:layout_constraintStart_toEndOf="@+id/ratingBar"
+                app:layout_constraintTop_toTopOf="@+id/ratingBar"
+                tools:text="2.6k reviews" />
+
+            <TextView
+                android:id="@+id/textLanguage"
+                style="@style/ContextText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:layout_marginRight="@dimen/_10sdp"
+                app:layout_constraintTop_toBottomOf="@+id/textVoteCount"
+                tools:text="English" />
+
+            <TextView
+                android:id="@+id/textReleaseDate"
+                style="@style/ContextText"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_calender"
+                android:paddingStart="@dimen/_16sdp"
+                android:paddingEnd="@dimen/_16sdp"
+                app:layout_constraintTop_toBottomOf="@+id/textLanguage"
+                tools:text="2019/12/31" />
+
+            <TextView
+                android:id="@+id/textOverview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:padding="@dimen/_16sdp"
+                app:layout_constraintTop_toBottomOf="@+id/textReleaseDate"
+                tools:text="When it's discovered that the evil Emperor Palpatine did not die at the hands of Darth Vader, the rebels must race against the clock to find out his whereabouts. Finn and Poe lead the Resistance to put a stop to the First Order's plans to form a new Empire, while Rey anticipates her inevitable confrontation with Kylo Ren." />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Production Companies"
+                android:id="@+id/txtHeading"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14sdp"
+                app:layout_constraintTop_toBottomOf="@+id/textOverview"
+                android:fontFamily="@font/lato_bold"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:background="@color/white"
+                android:id="@+id/rvProductionCompanies"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="@dimen/_2sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/txtHeading"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/item_production_company" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cast"
+                android:background="@color/darkBlue"
+                android:id="@+id/txtCast"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14sdp"
+                app:layout_constraintTop_toBottomOf="@+id/rvProductionCompanies"
+                android:fontFamily="@font/lato_bold"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:background="@color/white"
+                android:id="@+id/rvCast"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="@dimen/_2sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/txtCast"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/item_production_company" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</layout>
